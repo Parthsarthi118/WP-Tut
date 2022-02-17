@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	
+	<title>
+		Feedback Form
+	</title>
+
+	<style>
+
+		
+		body {
+			font-family: Verdana;
+			text-align: center;
+            color: black;
+            
+			background: center;
+		}
+
+		
+		form {
+			background-color: #DD8EA4;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 2px 2px 2px;
+		}
+
+		
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		button {
+			background-color: #FEDD89;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font: 200;
+			font-family: monospace;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); ">
+	<h1 style="color: white; ">Feedback Form</h1>
+
+	
+	<form id="form">
+
+		
+		<div class="form-control" style="font-weight: bold;">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+		
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+		
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Reason of coming
+			</label>
+			
+					<select name="role" id="role">
+				<option value="casual">Casual</option>
+				<option value="Party">Party</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Would you recommed Krishna Hotel?
+			</label>
+
+						<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio" 
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>How did you get to know about Krishna Hotels?
+			
+			</label>
+			
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Friends and Family</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Instagram</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Online Advertising</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Other</input></label>
+			
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			
+			<textarea name="comment" id="comment" cols="50"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
